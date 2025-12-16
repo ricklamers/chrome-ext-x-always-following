@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "X Always Following",
+  "description": "Automatically switches to the Following timeline on X.com",
+  "version": "1.0.0",
+  "permissions": [],
+  "content_scripts": [
+    {
+      "matches": ["https://x.com/*", "https://twitter.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
